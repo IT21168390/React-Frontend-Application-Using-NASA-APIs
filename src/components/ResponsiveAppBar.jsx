@@ -83,30 +83,45 @@ function ResponsiveAppBar() {
                             >
                                 <MenuIcon />
                             </IconButton>
-                            <Menu
-                                id="menu-appbar"
-                                anchorEl={anchorElNav}
-                                anchorOrigin={{
-                                    vertical: 'bottom',
-                                    horizontal: 'left',
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'left',
-                                }}
-                                open={Boolean(anchorElNav)}
-                                onClose={handleCloseNavMenu}
-                                sx={{
-                                    display: { xs: 'block', md: 'none' },
-                                }}
-                            >
-                                {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu} component={Link} to={`/${page.toLowerCase().replace(/\s+/g, '-')}`}>
-                                        <Typography textAlign="center">{page}</Typography>
-                                    </MenuItem>
-                                ))}
-                            </Menu>
+                            {userLoggedIn ?
+                                <Menu
+                                    id="menu-appbar"
+                                    anchorEl={anchorElNav}
+                                    anchorOrigin={{
+                                        vertical: 'bottom',
+                                        horizontal: 'left',
+                                    }}
+                                    keepMounted
+                                    transformOrigin={{
+                                        vertical: 'top',
+                                        horizontal: 'left',
+                                    }}
+                                    open={Boolean(anchorElNav)}
+                                    onClose={handleCloseNavMenu}
+                                    sx={{
+                                        display: { xs: 'block', md: 'none' },
+                                    }}
+                                >
+
+                                    <Button
+                                        //onClick={()=>navigate("/epic")}
+                                        sx={{ my: 2, color: 'black', display: 'block' }}
+                                        component={Link}
+                                        to={"/epic"}
+                                    >
+                                        EPIC
+                                    </Button>
+                                    <Button
+                                        sx={{ my: 2, color: 'black', display: 'block' }}
+                                        component={Link}
+                                        to={"/mars"}
+                                    >
+                                        MRP
+                                    </Button>
+                                </Menu>
+                                :
+                                ""
+                            }
                         </Box>
                         <SatelliteAltIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                         <Typography
