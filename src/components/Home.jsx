@@ -480,6 +480,7 @@ import { ExpandMore, ExpandLess, Close } from '@mui/icons-material';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
 import EarthNASA_JPG from '../assets/Earth-NASA.jpg';
+import FlightThroughSpace from '../assets/FlightThroughSpace.mp4'
 
 function Home() {
   const [pictureOfTheDay, setPictureOfTheDay] = useState(null);
@@ -756,7 +757,7 @@ function Home() {
 
       <div style={{ position: 'relative', width: '100vw', height: 'auto'/*100vh*/ }}>
         <video autoPlay loop muted style={{ position: 'fixed' /*absolute*/, top: 0, left: 0, width: '100vw', height: '100vh', objectFit: 'cover', zIndex: -1 }}>
-          <source src="src/assets/FlightThroughSpace.mp4" type="video/mp4" />
+          <source src={FlightThroughSpace} type="video/mp4" />
         </video>
       </div>
     </>
