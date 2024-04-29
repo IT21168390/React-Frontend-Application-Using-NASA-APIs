@@ -382,6 +382,10 @@ const EPIC = () => {
                 {/* Add additional source elements for different video formats if needed */}
             </video>
 
+            <div style={{ padding: '20px', textAlign: 'center', color: 'white', fontFamily: 'sans-serif', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                <h1>Earth Polychromatic Imaging Camera</h1>
+            </div>
+            
             {/* // <div style={{ width: '100%', height: 0, paddingBottom: '56%', position: 'relative' }}><iframe src="https://giphy.com/embed/qQh216lJwvU2mtyvwi" width="100%" height="100%" style={{position:'absolute'}} frameBorder="0" className="giphy-embed" allowFullScreen> */}
             <Grid container spacing={5} margin={'auto'} paddingBottom={'15px'}
                 // sx={{ backgroundColor: "grey.900", color: "white" }}>
