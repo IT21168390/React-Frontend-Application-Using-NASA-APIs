@@ -479,6 +479,8 @@ import Button from '@mui/material/Button';
 import { ExpandMore, ExpandLess, Close } from '@mui/icons-material';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
+import EarthNASA_JPG from '../assets/Earth-NASA.jpg';
+
 function Home() {
   const [pictureOfTheDay, setPictureOfTheDay] = useState(null);
   const [openDescription, setOpenDescription] = useState(false);
@@ -703,7 +705,7 @@ function Home() {
               }}
               onClick={() => { /* Handle navigation to component 1 */ }}
             >
-              <img src="src/assets/Earth-NASA.jpg" alt="Image 1 description" width='auto' height='300px' />
+              <img src={EarthNASA_JPG} alt="Image 1 description" width='auto' height='300px' />
               <Typography variant="h6" style={{ marginTop: '10px' }}>
                 Earth Polychromatic Imaging Camera (EPIC)
               </Typography>
