@@ -25,6 +25,8 @@ import {
 import { Favorite, FavoriteBorder, Close } from '@mui/icons-material';
 import { Zoom } from '@mui/material';
 
+import SpaceWithAsteroidsApproaching from '../assets/SpaceWithAsteroidsApproaching.mp4'
+
 function MarsRoverPhotos() {
     const VITE_NASA_API_KEY = import.meta.env.VITE_NASA_API_KEY;
     //const localKey = 'MarsPhotosData';
@@ -110,7 +112,7 @@ function MarsRoverPhotos() {
 
         <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
             <video autoPlay loop muted style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}>
-                <source src="src/assets/SpaceWithAsteroidsApproaching.mp4" type="video/mp4" />
+                <source src={SpaceWithAsteroidsApproaching} type="video/mp4" />
             </video>
             {/* Your content here */}
             <div style={{ padding: '20px', textAlign: 'center', color: 'white', fontFamily: 'sans-serif' }}>
