@@ -139,6 +139,25 @@ function ResponsiveAppBar() {
                                     {page}
                                 </Button>
                             ))} */}
+                            {userLoggedIn ? <>
+                                <Button
+                                    //onClick={()=>navigate("/epic")}
+                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    component={Link}
+                                    to={"/epic"}
+                                >
+                                    EPIC
+                                </Button>
+                                <Button
+                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    component={Link}
+                                    to={"/mars"}
+                                >
+                                    MRP
+                                </Button></>
+                                :
+                                ""
+                            }
                         </Box>
 
                         <Typography marginRight={'10px'}>{currentUser ? `Hi, ${currentUser.email}` : 'Explore the Universe!'}</Typography>
