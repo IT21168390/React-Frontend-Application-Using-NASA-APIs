@@ -328,6 +328,8 @@ import {
 } from '@mui/material';
 import { ExpandMore } from '@mui/icons-material';
 
+import EarthGlobeRotation from '../assets/EarthGlobeRotation.mp4';
+
 const EPIC = () => {
     const [epicData, setEpicData] = useState([]);
     const [expandedImage, setExpandedImage] = useState(null);
@@ -376,7 +378,7 @@ const EPIC = () => {
     return (
         <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
             <video autoPlay loop muted style={{ position: 'fixed' /*absolute*/, top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}>
-                <source src="src/assets/EarthGlobeRotation.mp4" type="video/mp4" />
+                <source src={EarthGlobeRotation} type="video/mp4" />
                 {/* Add additional source elements for different video formats if needed */}
             </video>
 
