@@ -125,10 +125,10 @@ function MarsRoverPhotos() {
                     name="row-radio-buttons-group"
                     sx={{ color: 'white' }}
                     defaultValue={"ALL"}>
-                    <FormControlLabel onChange={filterPhotosByCamera} value="ALL" control={<Radio />} label="ALL" />
-                    <FormControlLabel onChange={filterPhotosByCamera} value="Front Hazard Avoidance Camera" control={<Radio />} label="Front Hazard Avoidance Camera" />
-                    <FormControlLabel onChange={filterPhotosByCamera} value="Mast Camera" control={<Radio />} label="Mast Camera" />
-                    <FormControlLabel onChange={filterPhotosByCamera} value="Rear Hazard Avoidance Camera" control={<Radio />} label="Rear Hazard Avoidance Camera" />
+                    <FormControlLabel onChange={filterPhotosByCamera} value="ALL" control={<Radio sx={{color: 'white'}} />} label="ALL" />
+                    <FormControlLabel onChange={filterPhotosByCamera} value="Front Hazard Avoidance Camera" control={<Radio sx={{color: 'white'}} />} label="Front Hazard Avoidance Camera" />
+                    <FormControlLabel onChange={filterPhotosByCamera} value="Mast Camera" control={<Radio sx={{color: 'white'}} />} label="Mast Camera" />
+                    <FormControlLabel onChange={filterPhotosByCamera} value="Rear Hazard Avoidance Camera" control={<Radio sx={{color: 'white'}} />} label="Rear Hazard Avoidance Camera" />
                 </RadioGroup>
             </FormControl>
             {/* <div style={{ padding: '20px' }}>
