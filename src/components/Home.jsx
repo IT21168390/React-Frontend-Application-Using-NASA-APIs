@@ -72,7 +72,7 @@
 //     const fetchAPOD = async () => {
 //       try {
 //         const response = await axios.get(
-//           'https://api.nasa.gov/planetary/apod?api_key=oAjAIEcjtPfoJQev2xAtAkTAnkaYXQeKl0OnqOxF' // Replace with your actual NASA API key
+//           'https://api.nasa.gov/planetary/apod?api_key=' // Replace with your actual NASA API key
 //         );
 //         setPictureOfTheDay(response.data);
 //         console.log(response.data);
@@ -149,7 +149,7 @@
 //     const fetchAPOD = async () => {
 //       try {
 //         const response = await axios.get(
-//           'https://api.nasa.gov/planetary/apod?api_key=oAjAIEcjtPfoJQev2xAtAkTAnkaYXQeKl0OnqOxF' // Replace with your actual NASA API key
+//           'https://api.nasa.gov/planetary/apod?api_key=' // Replace with your actual NASA API key
 //         );
 //         setPictureOfTheDay(response.data);
 //       } catch (error) {
@@ -263,7 +263,7 @@
 //     const fetchAPOD = async () => {
 //       try {
 //         const response = await axios.get(
-//           'https://api.nasa.gov/planetary/apod?api_key=oAjAIEcjtPfoJQev2xAtAkTAnkaYXQeKl0OnqOxF' // Replace with your actual NASA API key
+//           'https://api.nasa.gov/planetary/apod?api_key=' // Replace with your actual NASA API key
 //         );
 //         setPictureOfTheDay(response.data);
 //       } catch (error) {
@@ -370,7 +370,7 @@ function Home() {
     const fetchAPOD = async () => {
       try {
         const response = await axios.get(
-          'https://api.nasa.gov/planetary/apod?api_key=oAjAIEcjtPfoJQev2xAtAkTAnkaYXQeKl0OnqOxF' // Replace with your actual NASA API key
+          'https://api.nasa.gov/planetary/apod?api_key=' // Replace with your actual NASA API key
         );
         setPictureOfTheDay(response.data);
       } catch (error) {
