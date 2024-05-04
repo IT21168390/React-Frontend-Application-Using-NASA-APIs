@@ -527,7 +527,7 @@ function Home() {
   };
 
   if (!pictureOfTheDay) {
-    return <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '200px' }}><img src={LoadingGIF} /></div>;
+    return <><div>Loading...</div><div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '200px' }}><img src={LoadingGIF} /></div></>;
   }
 
   // Use Modal instead of Drawer for a more seamless transition and hiding of background content
