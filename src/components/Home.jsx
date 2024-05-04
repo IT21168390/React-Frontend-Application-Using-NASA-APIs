@@ -9,7 +9,7 @@
 
 //   useEffect(() => {
 //     function fetchAPOD() {
-//       axios.get('https://api.nasa.gov/planetary/apod?api_key=oAjAIEcjtPfoJQev2xAtAkTAnkaYXQeKl0OnqOxF')
+//       axios.get('https://api.nasa.gov/planetary/apod?api_key=')
 //         .then(response => {
 //           setPictureOfTheDay(response.data.url);
 //         })
